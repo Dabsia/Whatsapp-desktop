@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+    
+}
+
+span{
+    font-size: 10px;
+}
+.container{
+    display: flex;
+}
+.chat-list{
+    width: 30%;
+    border-right: .3px solid ;
+    overflow: auto;
+}
+.display-message{
+    width: 70%;
+}
+/* CSS for Chat-list */
+.profile-image img{
+    width: 100%;
+    border-radius: 50%;
+    justify-self: center;
+}
+
+.profile-image{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
+header{
+    background-color: #EDEDED;
+    
+}
+ nav{
+    display: flex;
+    
+    justify-content: space-between;
+    padding: 15px;
+  
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.ri-more-fill, .ri-add-line, .ri-loader-3-fill{
+    font-size: 20px;
+   
+}
+li{
+    margin-left: 20px;
+}
+input[type = 'search']{
+    width: 92%;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    padding: 20px;
+    margin: 10px;
+    outline: none;
+    
+}
+input::placeholder{
+    padding-left: 50px;
+    font-size: 14px;
+}
+.searchbox{
+    background-color: #EDEDED;
+    margin: auto;
+    position: relative;
+}
+.search-icon{
+    position: absolute;
+    bottom: 22px;
+    left: 25px;
+}
+.sender-image img{
+    width: 100%;
+    border-radius: 50%;
+}
+.sender-image{
+    width: 40px;
+    margin-right: 4%;
+}
+.message-box{
+    display: flex;
+    border-bottom: 1px solid rgb(237, 238, 237);
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.chat-details{
+    margin-right: auto;
+}
+.message-list-holder{
+    display: flex;
+   
+}  
+.name {
+    font-size: 14px;
+}
+.time{
+    font-size: 12px;
+    margin-right: 10px;
+}
+.message{
+    font-size: 12px;
+    color: rgb(167, 167, 167);
+}
+.message-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 4%;
+}
+.username, .detail{
+    font-size:14px
+}
+section{
+    height: 77vh;
+    overflow-y: scroll;
+}
+
+
+
+/* display message CSS */
+.message-nav{
+    display: flex;
+}
+
+.message-nav img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.sender-details{
+    margin-left: 2%;
+    width: 250px;
+}
+.head-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #EDEDED;
+}
+.icon{
+    margin-left: 30px;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detail{
+    font-size: 12px;
+    color: rgb(167, 167, 167);
+}
+.background{
+    background-image: url('../images/whatsapp.jpg');
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    
+}
+.send-message{
+    display: flex;
+    width: 100%;
+    background-color: #ededed;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    
+}
+input[type = 'text']{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+}
+#messenger::placeholder{
+    padding-left: 12px;
+}
+
+.type-message{
+    width: 90%;
+}
+.message-icon{
+    font-size: 25px;
+    margin: 0 10px;
+    color: #a5a2a2;
+}
