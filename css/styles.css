@@ -97,6 +97,10 @@ input::placeholder{
     width: 100%;
     
 }
+.message-list:hover{
+    background-color:#d1d1d1;
+    cursor: pointer;
+}
 .chat-details{
     margin-right: auto;
 }
@@ -120,6 +124,7 @@ input::placeholder{
     flex-wrap: wrap;
     flex-direction: column;
     margin: 4%;
+    padding: 10px;
 }
 .username, .detail{
     font-size:14px
@@ -188,7 +193,8 @@ input[type = 'text']{
     height: 40px;
 }
 #messenger::placeholder{
-    padding-left: 12px;
+    padding-left: 50px;
+
 }
 
 .type-message{
