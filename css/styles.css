@@ -5,21 +5,27 @@
     font-family: poppins;
     
 }
-
+html,body{
+    width: 100%;
+   
+    overflow: hidden;
+}
 
 span{
     font-size: 10px;
 }
 .container{
     display: flex;
+    
 }
 .chat-list{
     width: 30%;
-   
-    overflow: auto;
+    overflow-x: hidden;
+    
 }
 .display-message{
     width: 70%;
+    height: 100vh;
 }
 /* CSS for Chat-list */
 .profile-image img{
@@ -58,29 +64,34 @@ ul {
 li{
     margin-left: 20px;
 }
+.searcher{
+    padding: 10px;
+    background-color: #EDEDED;
+}
 input[type = 'search']{
-    width: 92%;
-    height: 30px;
-    border-radius: 20px;
+    width: 75%;
+    height: 40px;
+    font-size:16px;
     border: none;
-    padding: 20px;
-    margin: 10px;
+    margin-left: 40px;
     outline: none;
-    
+    border-radius: 20px;
 }
 input::placeholder{
-    padding-left: 50px;
-    font-size: 14px;
+   padding-left: 2px;
+    font-size: 16px;
 }
 .searchbox{
-    background-color: #EDEDED;
-    margin: auto;
     position: relative;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+  
 }
 .search-icon{
     position: absolute;
-    bottom: 22px;
-    left: 25px;
+    bottom: 12px;
+    left: 15px;
 }
 .sender-image img{
     width: 100%;
@@ -115,9 +126,10 @@ input::placeholder{
 .name {
     font-size: 14px;
 }
-.time{
+div.time{
     font-size: 12px;
     margin-right: 10px;
+    width: 50px;
 }
 .message{
     font-size: 12px;
@@ -162,18 +174,18 @@ section{
     justify-content: space-between;
     padding: 10px;
     background-color: #EDEDED;
+    width: 100%;
 }
 .icon{
-    margin-left: 30px;
+    margin-left: 12px;
 }
 .icons:hover{
     cursor: pointer;
 }
 .icons{
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    margin-top: 9px;
+} 
 .detail{
     font-size: 12px;
     color: rgb(167, 167, 167);
@@ -201,13 +213,9 @@ input[type = 'text']{
     border-radius: 20px;
     height: 40px;
 }
-#messenger::placeholder{
-    padding-left: 50px;
-
-}
 
 .type-message{
-    width: 90%;
+    width: 80%;
 }
 .message-icon{
     font-size: 25px;
@@ -216,4 +224,24 @@ input[type = 'text']{
 }
 .message-icon:hover{
     cursor: pointer;
+}
+@media screen and (max-width:600px){
+    .display-message{
+        display: none
+    }
+    .chat-list{
+        width: 100%;
+    }
+    input[type = 'search']{
+        width: 80%;
+        
+    }
+    .searchbox{
+        width: 95%;
+        margin: auto;
+    }
+    .searcher{
+        width: 100%;
+        margin: auto;
+    }
 }
